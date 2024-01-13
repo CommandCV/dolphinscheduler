@@ -16,7 +16,7 @@
 #
 spring:
   profiles:
-    active: postgresql
+    active: mysql
   banner:
     charset: UTF-8
   jackson:
@@ -89,7 +89,7 @@ mybatis-plus:
 registry:
   type: zookeeper
   zookeeper:
-    namespace: dolphinscheduler
+    namespace: default
     connect-string: localhost:2181
     retry-policy:
       base-sleep-time: 60ms
@@ -167,7 +167,7 @@ spring:
       on-profile: mysql
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/dolphinscheduler
+    url: jdbc:mysql://localhost:3306/dolphinscheduler
     username: root
     password: root
   quartz:
